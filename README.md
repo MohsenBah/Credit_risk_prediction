@@ -2,18 +2,9 @@
 
 Still updating!
 
-## Context
 
 The original dataset contains 1000 entries with 20 categorial/symbolic attributes prepared by Prof. Hofmann. In this dataset, each entry represents a person who takes a credit by a bank. Each person is classified as good or bad credit risks according to the set of attributes. The link to the original dataset can be found below.
 
-Professor Dr. Hans Hofmann
-Institut f"ur Statistik und "Okonometrie
-Universit"at Hamburg
-FB Wirtschaftswissenschaften
-Von-Melle-Park 5
-2000 Hamburg 13 
-
-https://archive.ics.uci.edu/ml/datasets/Statlog+%28German+Credit+Data%29
 
 ## Content
 
@@ -34,8 +25,27 @@ It is almost impossible to understand the original dataset due to its complicate
 
 2- EDA
 
+
 3- Classification
+
+As shown, LDA and Logistic Regeression the powerful models according to the AUC measure with startified cross validation.
+I chose LR with l2 penalty as final model.
+
+<img src="static/img/models.png" width="280px">
+
 
 4- web app by Flask
     
+    To run tha web app please run app.py
+    
  ## Reference   
+
+
+Professor Dr. Hans Hofmann
+Institut f"ur Statistik und "Okonometrie
+Universit"at Hamburg
+FB Wirtschaftswissenschaften
+Von-Melle-Park 5
+2000 Hamburg 13 
+
+https://archive.ics.uci.edu/ml/datasets/Statlog+%28German+Credit+Data%29
