@@ -15,11 +15,11 @@ It is almost impossible to understand the original dataset due to its complicate
     Sex (text: male, female)
     Job (numeric: 0 - unskilled and non-resident, 1 - unskilled and resident, 2 - skilled, 3 - highly skilled)
     Housing (text: own, rent, or free)
-    Saving accounts (text - little, moderate, quite rich, rich)
-    Checking account (numeric, in DM - Deutsch Mark)
-    Credit amount (numeric, in DM)
+    Saving accounts (text - little, moderate, quite rich, rich,nan)
+    Checking account (text - 'little', 'moderate', nan, 'rich')
+    Credit amount (numeric)
     Duration (numeric, in month)
-    Purpose(text: car, furniture/equipment, radio/TV, domestic appliances, repairs, education, business, vacation/others
+    Purpose(text: car, furniture/equipment, radio/TV, domestic appliances, repairs, education, business, vacation/others)
     Risk (Value target - Good or Bad Risk)
 
 
@@ -31,12 +31,15 @@ It is almost impossible to understand the original dataset due to its complicate
 As shown, LDA and Logistic Regeression the powerful models according to the AUC measure with startified cross validation.
 I chose LR with l2 penalty as final model.
 
-<img src="static/img/models.png" width="280px">
+<img src="static/img/models.png" width="600px">
 
 
 4- web app by Flask
     
     To run tha web app please run app.py
+    
+<img src="static/img/webpage.png" width="600px">
+
     
  ## Reference   
 
