@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Prediction Credit Risk of a Customer</h2>
+    <p>Please fill out the form according to a customer and push "Predict":</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="/static/img/1.png" style="width:90%">
+      <img src="/static/img/3.png" style="width:90%">
+
+    </div>
+    <div class="column">
+ <form action="{{ url_for('predict')}}"method="post">
+	<input type="text" name="age" placeholder="Age" required="required" />		
+
+	<label for="sex"> Gender:</label>
+  <select name="sex">
+    <option value="male"> Male </option>
+    <option value="female"> Female </option>
+
+  </select>
+
+	<label for="job"> Job:</label>
+  <select name="job">
+    <option value=0> unskilled and non-residen </option>
+    <option value=1> unskilled and resident </option>
+    <option value=2> skilled </option>
+    <option value=3> highly skilled </option>
+
+  </select>
+  <br><br>
+
+
+	<label for="housing"> Housing:</label>
+  <select name="housing">
+    <option value="own"> own </option>
+    <option value="free"> free </option>
+    <option value="rent"> rent </option>
+
+  </select>
+  <br><br>
+
+
+	<label for="saving"> Saving accounts:</label>
+  <select name="saving">
+	<option value=nan>N/A</option>
+    <option value="little">little</option>
+    <option value="quite rich"> quite rich </option>
+    <option value="rich">rich</option>
+    <option value="moderate"> moderate </option>
+
+
+  </select>
+  <br><br>
+
+
+	<label for="checking"> Checking accounts:</label>
+  <select name="checking">
+	<option value=nan>N/A</option>
+    <option value="little">little</option>
+    <option value="moderate">moderate</option>
+    <option value="rich">rich</option>
+
+
+  </select>
+  <br><br>
+
+
+
+
+	<input type="text" name="credit" placeholder="Credit Amount" required="required" />
+	<input type="text" name="duration" placeholder="Duration" required="required" />	
+
+	<label for="purpose">Purpose:</label>
+  <select name="purpose" required>
+    <option value="radio/TV">radio/TV</option>
+    <option value="education">education</option>
+    <option value="furniture/equipment">furniture/equipment</option>
+    <option value="car">car</option>
+    <option value="business">business</option>
+    <option value="domestic appliances">domestic appliances</option>
+    <option value="repairs">repairs</option>
+    <option value="vacation/others">vacation/others</option>
+
+  </select>
+  <br><br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+
+ </div>
+    {{ prediction_text }}
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
