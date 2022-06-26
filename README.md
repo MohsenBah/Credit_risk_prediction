@@ -23,10 +23,7 @@ It is almost impossible to understand the original dataset due to its complicate
     Risk (Value target - Good or Bad Risk)
 
 
-2- EDA
-
-
-3- Classification
+2- Classification
 
 As shown, LDA and Logistic Regeression the powerful models according to the AUC measure with startified cross validation.
 I chose LR with l2 penalty as final model.
@@ -34,7 +31,7 @@ I chose LR with l2 penalty as final model.
 <img src="static/img/models.png" width="600px">
 
 
-4- web app by Flask
+3- web app by Flask
     
     To run tha web app please run app.py
     
