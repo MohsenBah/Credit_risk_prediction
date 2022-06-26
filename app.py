@@ -19,7 +19,10 @@ def home():
 def predict():
     features = [x for x in request.form.values()]
     a = [np.array(features)]
-    b=pd.DataFrame(a,columns=['Age', 'Sex', 'Job', 'Housing', 'Saving accounts', 'Checking account','Credit amount', 'Duration', 'Purpose'])
+    b=pd.DataFrame(a,columns=['Age', 'Sex', 'Job', 'Housing', 'Saving accounts', 
+				'Checking account','Credit amount', 'Duration', 
+				'Purpose'
+				])
     c=pd.get_dummies(b,columns=[
                        'Sex', "Housing", 'Saving accounts', 'Checking account',
                        'Purpose'
