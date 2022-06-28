@@ -8,7 +8,7 @@ import os
 app = Flask(__name__)
 
 
-clf = pickle.load(open('/Users/mohsen/Documents/GitHub/Credit_risk_prediction/model.pkl','rb'))
+clf = pickle.load(open('model.pkl','rb'))
 
 
 @app.route('/')
