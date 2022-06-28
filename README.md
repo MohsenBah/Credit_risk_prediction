@@ -1,7 +1,5 @@
 # Credit_risk_prediction
 
-Still updating!
-
 
 The original dataset contains 1000 entries with 20 categorial/symbolic attributes prepared by Prof. Hofmann. In this dataset, each entry represents a person who takes a credit by a bank. Each person is classified as good or bad credit risks according to the set of attributes. The link to the original dataset can be found below.
 
@@ -36,6 +34,13 @@ I chose LR with l2 penalty as final model.
     To run tha web app please run app.py
     
 <img src="static/img/webpage.png" width="600px">
+
+
+4- Heroku 
+
+Find the webapp here on Heroku:
+    
+https://credit-risk-webapp.herokuapp.com/
 
     
  ## Reference   
