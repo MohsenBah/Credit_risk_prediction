@@ -7,6 +7,7 @@ The original dataset contains 1000 entries with 20 categorial/symbolic attribute
 ## Content
 
 1- Preprocessing: 
+
 It is almost impossible to understand the original dataset due to its complicated system of categories and symbols. Thus, it is needed to do much preprocessing. Moreover, I plan to deploy the final model, so I chose these features.
 
     Age (numeric)
@@ -14,7 +15,7 @@ It is almost impossible to understand the original dataset due to its complicate
     Job (numeric: 0 - unskilled and non-resident, 1 - unskilled and resident, 2 - skilled, 3 - highly skilled)
     Housing (text: own, rent, or free)
     Saving accounts (text - little, moderate, quite rich, rich,nan)
-    Checking account (text - 'little', 'moderate', nan, 'rich')
+    Checking account (text - 'little', 'moderate', 'rich', nan)
     Credit amount (numeric)
     Duration (numeric, in month)
     Purpose(text: car, furniture/equipment, radio/TV, domestic appliances, repairs, education, business, vacation/others)
