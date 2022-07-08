@@ -25,7 +25,7 @@ It is almost impossible to understand the original dataset due to its complicate
 2- Classification
 
 As shown, LDA and Logistic Regeression the powerful models according to the AUC measure with startified cross validation.
-I chose LR with l2 penalty as final model.
+I chose LR with l2 penalty as a final model.
 
 <img src="static/img/models.png" width="600px">
 
